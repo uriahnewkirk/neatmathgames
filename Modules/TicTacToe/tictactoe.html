@@ -1,0 +1,49 @@
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="tictactoe.css">
+        <script src="tictactoe.js"></script>
+        <title>Tic Tac Toe</title>        
+    </head>
+    <body>
+        <!-- #region navigation bar -->
+        <div class="navigationH">
+            <nav>
+                <a href="../../index.html">
+                    <img src="../../assets/peacock.png" class="logo">
+                </a>
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <!-- <li><a href="">PokeDex</a></li> -->
+                    <li><a href="">Contact Us</a></li>
+                    <li>
+                        <input type="search" id="search" placeholder="Search... &#128270" list="searchBar">
+                            <datalist id="searchBar">
+                                <option value="Tic Tac Toe">Tic-Tac-Toe</option>
+                                <option value="Rock Paper Scissors">Rock Paper Scissors</option>
+                                <option value="Pong">Pong</option>
+                                <option value="Connect 4">Connect 4</option>
+                                <option value="Calculator">Calculator</option>
+                            </datalist>
+                    </li>
+                    <!-- dark mode toggle? -->
+                    <!-- <button type="button" onclick="toggleDarkMode()" id="darkModeB"><span></span></button>
+                     &#127773 / &#127761 -->
+                </ul>
+            </nav>
+        </div>
+        <!-- #endregion -->
+
+        <div>
+            <h2>Tic Tac Toe</h2>
+            <h4 id="playerWins">WINNER!</h4>
+        
+            <button class="gameReset" id="resetButton" onclick="resetGame()"><span>Reset</span></button>
+            <div id="board">
+            </div>
+        </div>
+    </body>        
+</html>

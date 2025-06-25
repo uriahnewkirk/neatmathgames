@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="wordle.css">
+        <script src="wordle.js"></script>
+        <title>Wordle</title>
+    </head>
+    <body>
+
+        <!-- #region navigation bar -->
+        <div class="navigationH">
+            <nav>
+                <a href="../../index.html">
+                    <img src="../../assets/peacock.png" class="logo">
+                </a>
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <!-- <li><a href="">PokeDex</a></li> -->
+                    <li><a href="">Contact Us</a></li>
+                    <li>
+                        <input type="search" id="search" class="navSearch" placeholder="Search... &#128270" list="searchBar">
+                            <datalist id="searchBar">
+                                <option value="Tic Tac Toe">Tic-Tac-Toe</option>
+                                <option value="Rock Paper Scissors">Rock Paper Scissors</option>
+                                <option value="Minesweeper">Minesweeper</option>
+                                <option value="Connect 4">Connect 4</option>
+                                <option value="Calculator">Calculator</option>
+                            </datalist>
+                    </li>
+                    <!-- <button type="button" onclick="toggleDarkMode()" id="darkModeB"><span></span></button>
+                     &#127773 / &#127761 -->
+
+                </ul>
+            </nav>
+        </div>
+        <!-- #endregion -->
+
+        <h3 id="title">Wordle</h3>
+        <div id="board">
+        </div>
+        <br>
+
+        <h3 id="answer"></h3>
+    </body>
+</html>

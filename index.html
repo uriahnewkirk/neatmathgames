@@ -1,0 +1,152 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Neat Math Games</title>        
+    </head>
+    <body>
+        <!-- #region navigation bar -->
+        <div class="navigationH">
+            <nav>
+                <a href="./index.html">
+                    <img src="assets/peacock.png" class="logo">
+                </a>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <!-- <li><a href="">PokeDex</a></li> -->
+                    <li><a href="">Contact Us</a></li>
+                    <li>
+                        <input type="search" id="search" class="navSearch" placeholder="Search... &#128270" list="searchBar">
+                            <datalist id="searchBar">
+                                <option value="Tic Tac Toe">Tic-Tac-Toe</option>
+                                <option value="Rock Paper Scissors">Rock Paper Scissors</option>
+                                <option value="Minesweeper">Minesweeper</option>
+                                <option value="Connect 4">Connect 4</option>
+                                <option value="Calculator">Calculator</option>
+                            </datalist>
+                    </li>
+                    <!-- <button type="button" onclick="toggleDarkMode()" id="darkModeB"><span></span></button>
+                     &#127773 / &#127761 -->
+
+                </ul>
+            </nav>
+        </div>
+        <!-- #endregion -->
+
+        <div class="gamesCategory">
+            <h2>Fun Activities </h2>
+        </div>
+
+        <!-- #region games/activities -->
+        <div class="gamesGrid">
+
+            <div class="gameCardColumn">
+                <a href="Modules/2048/2048.html">
+                    <img src="assets/gameCards/2048.jpg" alt="Avatar">
+                </a>    
+                <div class="gameContainer">
+                    <h4><b>2048</b></h4>
+                    <p>singleplayer game</p>
+                </div>
+            </div>
+
+            <div class="gameCardColumn">
+                <a href="Modules/Breakout/breakout.html">
+                    <img src="assets/gameCards/breakout.jpg" alt="Avatar">
+                </a>    
+                <div class="gameContainer">
+                    <h4><b>Breakout</b></h4>
+                    <p>singleplayer game</p>
+                </div>
+            </div>
+
+            <div class="gameCardColumn">
+                <a href="Modules/ConnectFour/connectFour.html">
+                    <img src="assets/gameCards/connectFour02.jpg" alt="Avatar">
+                </a>    
+                <div class="gameContainer">
+                    <h4><b>Connect Four</b></h4>
+                    <p>invented in 1858</p>
+                </div>
+            </div>
+
+            <div class="gameCardColumn">
+                <a href="Modules/Minesweeper/Minesweeper.html">
+                    <img src="assets/gameCards/Minesweeper.jpg" alt="Avatar">
+                </a>    
+                <div class="gameContainer">
+                    <h4><b>Minesweeper</b></h4>
+                    <p>singleplayer game</p>
+                </div>
+            </div>
+
+            <div class="gameCardColumn">
+                <a href="Modules/RockPaperScissors/rockpaperscissors.html">
+                    <img src="assets/gameCards/rockPaperScissors02.png" alt="Avatar">
+                </a>    
+                <div class="gameContainer">
+                    <h4><b>Rock Paper Scissors</b></h4>
+                    <p>singleplayer game</p>
+                </div>
+            </div>
+
+            <div class="gameCardColumn">
+                <a href="Modules/SpaceInvaders/spaceInvaders.html">
+                    <img src="assets/gameCards/spaceInvaders.png" alt="Avatar">
+                </a>    
+                <div class="gameContainer">
+                    <h4><b>Space Invaders</b></h4>
+                    <p>singleplayer game</p>
+                </div>
+            </div>
+            
+            <div class="gameCardColumn">
+                <a href="Modules/Snake/snake.html">
+                    <img src="assets/gameCards/snake.jpg" alt="Avatar">
+                </a>    
+                <div class="gameContainer">
+                    <h4><b>Snake</b></h4>
+                    <p>invented in ????</p>
+                </div>
+            </div>
+
+            <div class="gameCardColumn">
+                <a href="Modules/TicTacToe/tictactoe.html">
+                    <img src="assets/gameCards/tictactoe02.jpg" alt="Avatar">
+                </a>    
+                <div class="gameContainer">
+                    <h4><b>Tic-Tac-Toe</b></h4>
+                    <p>Two player strategy game</p>
+                </div>
+            </div>
+
+            <div class="gameCardColumn">
+                <a href="Modules/Wordle/wordle.html">
+                    <img src="assets/gameCards/Wordle02.jpg" alt="Avatar">
+                </a>    
+                <div class="gameContainer">
+                    <h4><b>Wordle</b></h4>
+                    <p>singleplayer game</p>
+                </div>
+            </div>
+
+        </div>
+        <!-- #endregion -->
+
+        <script>
+            //how to apply to every page?
+            function toggleDarkMode(){
+
+                //update the button class
+                var darkModeB = document.getElementById("darkModeB");
+                darkModeB.classList.toggle("active");
+                
+                //update the page colors
+                var element = document.body;
+                element.classList.toggle("light-mode");
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,48 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Minesweeper</title>
+        <link rel="stylesheet" href="Minesweeper.css">
+        <script src="Minesweeper.js"></script>
+    </head>
+
+    <body>
+
+        <!-- #region navigation bar -->
+        <div class="navigationH">
+            <nav>
+                <a href="../../index.html">
+                    <img src="../../assets/peacock.png" class="logo">
+                </a>
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <!-- <li><a href="">PokeDex</a></li> -->
+                    <li><a href="">Contact Us</a></li>
+                    <li>
+                        <input type="search" id="search" class="navSearch" placeholder="Search... &#128270" list="searchBar">
+                            <datalist id="searchBar">
+                                <option value="Tic Tac Toe">Tic-Tac-Toe</option>
+                                <option value="Rock Paper Scissors">Rock Paper Scissors</option>
+                                <option value="Minesweeper">Minesweeper</option>
+                                <option value="Connect 4">Connect 4</option>
+                                <option value="Calculator">Calculator</option>
+                            </datalist>
+                    </li>
+                    <!-- <button type="button" onclick="toggleDarkMode()" id="darkModeB"><span></span></button>
+                     &#127773 / &#127761 -->
+
+                </ul>
+            </nav>
+        </div>
+        <!-- #endregion -->
+
+
+
+        <h1>Mines: <span id="mine-count">0</span></h1>
+        <div id="board"></div>
+        <br>
+        <button id="flag-button">🚩</button>
+    </body>
+</html>

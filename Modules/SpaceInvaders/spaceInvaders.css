@@ -1,0 +1,148 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+#board {
+    background-color: black;
+}
+
+
+
+
+
+
+
+
+
+/* from home page */
+
+.navigationH {
+    background: rgb(105, 120, 170);
+    width: 100%;
+    color: #fff;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 0px 5%;
+}
+
+nav .logo {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+nav input {
+    font-size: 1rem;
+}
+
+.navSearch {
+    background-color: white;
+    color: rgb(30, 30, 30);
+}
+
+nav ul li a {
+    display: block;
+    color: rgb(30, 30, 30);
+    text-decoration: none;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: rgb(30, 30, 30);
+    color: white;
+    border-radius: 10px;
+}
+
+nav ul {
+    flex: 1;
+    text-align: left;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 10px;
+}
+
+nav ul button {
+    /* background: #efefef; */
+    background: green;
+    height: 20px;
+    width: 35px;
+    border-radius: 60px;
+    border: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    outline: 0;
+    cursor: pointer;
+}
+
+nav button span {
+    display: block;
+    background: #999;
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    margin-left: 15px;
+}
+
+.active {
+    background: #efefef;
+}
+
+.active span {
+    background: #999;
+    margin-left: 0px;
+}
+
+.dark-mode {
+    background-color: rgb(30, 30, 30);
+    color: white;
+}
+
+.light-mode {
+    background-color: rgb(230, 230, 230);
+    color: black;
+}
+
+.search-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: .25rem;
+}
+
+.gamesGrid {
+    margin: 0px auto;
+    width: 70%;
+}
+
+.gameCardColumn {
+    float: left;
+    width: 20%;
+    margin: 0px 5% 5%;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.gameCardColumn:hover {
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);;
+}
+
+.gameCardColumn img {
+    width: 100%;
+    height: 23%;
+    border-radius: 5px 5px 0 0;
+}
+
+.gameContainer {
+    padding: 2px 16px;
+}

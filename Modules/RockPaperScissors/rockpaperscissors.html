@@ -1,0 +1,52 @@
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rock Paper Scissors</title>
+        <link rel="stylesheet" href="rockpaperscissors.css">
+        <script src="rockpaperscissors.js"></script>
+    </head>
+
+    <body>
+
+                <!-- #region navigation bar -->
+        <div class="navigationH">
+            <nav>
+                <a href="../../index.html">
+                    <img src="../../assets/peacock.png" class="logo">
+                </a>
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <!-- <li><a href="">PokeDex</a></li> -->
+                    <li><a href="">Contact Us</a></li>
+                    <li>
+                        <input type="search" id="search" placeholder="Search... &#128270" list="searchBar">
+                            <datalist id="searchBar">
+                                <option value="Tic Tac Toe">Tic-Tac-Toe</option>
+                                <option value="Rock Paper Scissors">Rock Paper Scissors</option>
+                                <option value="Pong">Pong</option>
+                                <option value="Connect 4">Connect 4</option>
+                                <option value="Calculator">Calculator</option>
+                            </datalist>
+                    </li>
+                    <!-- <button type="button" onclick="toggleDarkMode()" id="darkModeB"><span></span></button>
+                     &#127773 / &#127761 -->
+
+                </ul>
+            </nav>
+        </div>
+        <!-- #endregion -->
+
+
+
+        <h1 id="opponent-score">CPU Score: 0</h1>
+        <img id="opponent-choice" src="../../assets/questionMark1.png">
+        <br>
+        <img id="your-choice" src="../../assets/questionMark2.png">
+        <div id="choices">
+        </div>
+        <h1 id="your-score">Your Score: 0</h1>
+    </body>
+</html>
